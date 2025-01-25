@@ -1,0 +1,75 @@
+body {
+  background: black;
+}
+
+.loader {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0px -50px;
+}
+
+.loader div {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.circle1 {
+  animation: animate 2s linear infinite;
+}
+.circle2 {
+  animation: animate 2s linear infinite -0.4s;
+}
+.circle3 {
+  animation: animate 2s linear infinite -0.8s;
+}
+.circle4 {
+  animation: animate 2s linear infinite -1.2s;
+}
+.circle5 {
+  animation: animate 2s linear infinite -1.6s;
+}
+
+@keyframes animate {
+  0% {
+    left: 100px;
+    top: 0;
+  }
+
+  80% {
+    left: 0;
+    top: 0;
+  }
+
+  85% {
+    left: 0;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background: white;
+  }
+
+  90% {
+    width: 40px;
+    height: 15px;
+    background: linear-gradient(to top, rgb(76, 118, 216), rgb(239, 84, 239));
+  }
+
+  95% {
+    left: 100px;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to top, rgb(76, 118, 216), rgb(154, 69, 154));
+  }
+
+  100% {
+    left: 100px;
+    top: 0;
+  }
+}
